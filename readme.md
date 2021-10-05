@@ -63,7 +63,7 @@
 </p>
 
 In this internet age, everyone is learning to stay ahead in their career or to develop something new, creative and fun. Digging the internet for quality tutorials, watching that youtube videos of blender, illustrator, photoshop, webdev and coding along. Coding along with videos is a nightmare specially if you are only having one single display.
-Simpl allows you to watch your favourite tutorial, with minimalistic interface and functionalities, so that the video player controls do not occupy the space, only showing video on the screen
+Simpl allows you to watch your favourite tutorial, with minimalistic interface and functionalities, so that the video player controls do not occupy the space, only showing video on the screen.
 <br/><br/>
 
 ## 🌟 Functionalities
@@ -85,9 +85,9 @@ This is achieved with **ElectronJS**, and the whole application is written in ht
 
 - Just go to the [Homepage](https://daxter-army.github.io/simpl), and download the package as per your OS.
 
-- After opening the application, just drag and drop the video on the application, you want to see
+- After opening the application, just drag and drop the video on the application, you want to see.
 
-- Only available for windows till now, support for macOS and linux is coming soon
+- Only available for windows till now, support for macOS and linux is coming soon.
 
 <!-- **For Linux/OS X users only**
 
@@ -95,7 +95,7 @@ This is achieved with **ElectronJS**, and the whole application is written in ht
 
 ## 🚵‍♂️ Getting Started (Development)
 
-This section will help you to get started with the project, locally
+This section will help you to get started with the project, locally.
 
 ## ⭐ Prerequistes
 
@@ -104,7 +104,7 @@ This section will help you to get started with the project, locally
 ```sh
   npm i electron -g
 ```
-If any error occurs in windows, try to install it with CMD opened in admin mode
+If any error occurs in windows, try to install it with CMD opened in admin mode.
 
 ### 📦 Installation
 
@@ -148,7 +148,7 @@ To create one distributable file on windows, you need to download **electron-bui
 
 <!-- <img src="https://github.com/daxter-army/key-cast/blob/main/docs/docs_assets/ui_screenshot.png" width="35%" alt="gui" /> -->
 
-You can use it to watch your favourite tutorial, with great ease and great functionalities
+You can use it to watch your favourite tutorial, with great ease and great functionalities.
 
 **More themes and features coming soon!**
 
