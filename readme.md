@@ -165,13 +165,13 @@ Contributions are what make the open source community such an amazing place to l
 
 <!-- LICENSE -->
 
-## License
+## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 
-## Contact
+## 📞 Contact
 
 Mehul Singh Teya - mehulsinghteya@gmail.com | [LinkedIn](https://linkedin.com/in/mehulsinghteya)
 <br/>
@@ -179,7 +179,7 @@ Project Link: [https://github.com/daxter-army/key-cast](https://github.com/daxte
 <br/>
 Project Homepage : [https://daxter-army.github.io/key-cast](https://daxter-army.github.io/key-cast)
 
-## Acknowledgement
+## 🌠 Acknowledgement
 
 - [Fontawesome](https://fontawesome.com)
 - [Electron](https://electronjs.org)
