@@ -13,7 +13,7 @@
     <img src="https://github.com/daxter-army/simpl/blob/main/files/images/simpl_logo.png" alt="Logo" width="50">
   </a>
 
-  <h3 align="center">Simpl - dev media player</h3>
+  <h3 align="center">Simpl - video player for devs</h3>
 
   <p align="center">
     A video player, specially for devs
