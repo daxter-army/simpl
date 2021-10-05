@@ -23,6 +23,3 @@
     <br />
   </p>
 </p>
-
-## NOTE
-This project is operational, but is in heavy development right now
