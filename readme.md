@@ -28,7 +28,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Introduction</a>
+      <a href="#about-the-project">Introduction</a><br/>
       <a href="#functionalities">Functionalities</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
@@ -59,7 +59,7 @@
 ## Introduction
 
 <p align="center">
-<img src="https://github.com/daxter-army/key-cast/blob/main/docs/docs_assets/keycast_demo_gif_2.gif" width="75%" alt="Keycast in action"/>
+<!-- <img src="https://github.com/daxter-army/key-cast/blob/main/docs/docs_assets/keycast_demo_gif_2.gif" width="75%" alt="Keycast in action"/> -->
 </p>
 
 In this internet age, everyone is learning to stay ahead in their career or to develop something new, creative and fun. Digging the internet for quality tutorials, watching that youtube videos of blender, illustrator, photoshop, webdev and coding along. Coding along with videos is a nightmare specially if you are only having one single display.
@@ -85,13 +85,15 @@ This is achieved with **ElectronJS**, and the whole application is written in ht
 
 - Just go to the [Homepage](https://daxter-army.github.io/simpl), and download the package as per your OS.
 
+- After opening the application, just drag and drop the video on the application, you want to see
+
 - Only available for windows till now, support for macOS and linux is coming soon
 
 <!-- **For Linux/OS X users only**
 
 - After downloading the file, open the properties of the file, go to permissions tab and check the option saying **allow executing file as program**, and then run the file, now it would run smoothly. -->
 
-## Getting Started (Development)
+## 🚲 Getting Started (Development)
 
 This section will help you to get started with the project, locally
 
@@ -142,9 +144,9 @@ To create one distributable file on windows, you need to download **electron-bui
 - Now there would be a dist folder, containing the application
 <!-- USAGE EXAMPLES -->
 
-## Usage
+## 🚗 Usage
 
-<img src="https://github.com/daxter-army/key-cast/blob/main/docs/docs_assets/ui_screenshot.png" width="35%" alt="gui" />
+<!-- <img src="https://github.com/daxter-army/key-cast/blob/main/docs/docs_assets/ui_screenshot.png" width="35%" alt="gui" /> -->
 
 You can use it with any of your favourite software while making any tutorial, screen casting your screen, or while streaming your game over the internet.
 
@@ -180,17 +182,7 @@ Project Homepage : [https://daxter-army.github.io/key-cast](https://daxter-army.
 ## Acknowledgement
 
 - [Fontawesome](https://fontawesome.com)
-- [Python](https://python.org)
-- [Tkinter](https://docs.python.org/3/library/tkinter.html)
-- [Pynput](https://pypi.org/project/pynput/)
-- [Pyinstaller](https://pyinstaller.readthedocs.io/en/stable/)
+- [Electron](https://electronjs.org)
+- [Electron Builder](https://electron.build)
 
 ## Info
-
-- Right now it is heavily under development, and is being developed in linux (ubuntu). You can see unidentified characters being shown by the software, because sometimes different key combos having different key codes, I am working on this to support as many as keyboards and key combos possible.
-
-- **windows_bundle** directory contains bundled package for windows, same is the case with **linux_bundle**, bundle to be created for mac OS X.
-
-- The main file that runs is **/dist/keycast_prod.exe**, these are also the files that are available on the homepage to be downloaded.
-
-- For development use, **keycast_dev.py**, then copy-paste the whole code to **keycast_prod.py**, and also paste the code of additional files in that file also, to increase the performance.
