@@ -175,9 +175,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Mehul Singh Teya - mehulsinghteya@gmail.com | [LinkedIn](https://linkedin.com/in/mehulsinghteya)
 <br/>
-Project Link: [https://github.com/daxter-army/key-cast](https://github.com/daxter-army/key-cast)
+Project Link: [https://github.com/daxter-army/key-cast](https://github.com/daxter-army/simpl)
 <br/>
-Project Homepage : [https://daxter-army.github.io/key-cast](https://daxter-army.github.io/key-cast)
+Project Homepage : [https://daxter-army.github.io/key-cast](https://daxter-army.github.io/simpl)
 
 ## 🌠 Acknowledgement
 
