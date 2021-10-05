@@ -50,7 +50,7 @@
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgement">Acknowledgement</a></li>
     <li><a href="#info">Info</a></li>
-    <li><a href="#issues">Issues</a></li>
+    <!-- <li><a href="#issues">Issues</a></li> -->
   </ol>
 </details>
 
@@ -148,9 +148,9 @@ To create one distributable file on windows, you need to download **electron-bui
 
 <!-- <img src="https://github.com/daxter-army/key-cast/blob/main/docs/docs_assets/ui_screenshot.png" width="35%" alt="gui" /> -->
 
-You can use it with any of your favourite software while making any tutorial, screen casting your screen, or while streaming your game over the internet.
+You can use it to watch your favourite tutorial, with great ease and great functionalities
 
-**More themes coming soon!**
+**More themes and features coming soon!**
 
 <!-- CONTRIBUTING -->
 <!-- ## Contributing
@@ -185,4 +185,4 @@ Project Homepage : [https://daxter-army.github.io/key-cast](https://daxter-army.
 - [Electron](https://electronjs.org)
 - [Electron Builder](https://electron.build)
 
-## Info
+<!-- ## Info -->
