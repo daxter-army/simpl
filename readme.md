@@ -28,16 +28,16 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Introduction</a><br/>
-      <a href="#functionalities">Functionalities</a>
+      <a href="#about-the-project">Introduction</a>
       <ul>
+      <li><a href="#functionalities">Functionalities</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <a href="#getting-started">Getting Started (Development)</a>
       <ul>
+        <li><a href="#getting-started">Getting Started (Development)</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
         <li><a href="#building">Building</a></li>
