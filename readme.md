@@ -56,7 +56,7 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## Introduction
+## ✨ Introduction
 
 <p align="center">
 <!-- <img src="https://github.com/daxter-army/key-cast/blob/main/docs/docs_assets/keycast_demo_gif_2.gif" width="75%" alt="Keycast in action"/> -->
@@ -66,7 +66,7 @@ In this internet age, everyone is learning to stay ahead in their career or to d
 Simpl allows you to watch your favourite tutorial, with minimalistic interface and functionalities, so that the video player controls do not occupy the space, only showing video on the screen
 <br/><br/>
 
-## Functionalities
+## 🌟 Functionalities
 * Following are the functionalities implemented till now:
 * Cross platform
 * minimalistic design
