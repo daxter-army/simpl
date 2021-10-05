@@ -72,7 +72,7 @@ Simpl allows you to watch your favourite tutorial, with minimalistic interface a
 * minimalistic design
 * keyboard support
 
-### Built With
+### 🛠 Built With
 
 This is achieved with **ElectronJS**, and the whole application is written in html, css and vanilla javascript, and the application is build with **electron-builder**, for cross-platform compatibilty.
 
@@ -81,7 +81,7 @@ This is achieved with **ElectronJS**, and the whole application is written in ht
 
 <!-- GETTING STARTED -->
 
-## Getting Started
+## 🚲 Getting Started
 
 - Just go to the [Homepage](https://daxter-army.github.io/simpl), and download the package as per your OS.
 
@@ -93,7 +93,7 @@ This is achieved with **ElectronJS**, and the whole application is written in ht
 
 - After downloading the file, open the properties of the file, go to permissions tab and check the option saying **allow executing file as program**, and then run the file, now it would run smoothly. -->
 
-## 🚲 Getting Started (Development)
+## 🚵‍♂️ Getting Started (Development)
 
 This section will help you to get started with the project, locally
 
