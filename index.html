@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="./files/css/index.css" />
+    <link rel="stylesheet" href="./files/css/all.min.css" />
+    <script src="./files/js/all.min.js" defer></script>
+    <title>Simpl - Dev Media Player</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="file-drag-loading-div">
+        <img id="loading-image" src="./files/images/simpl_logo.png"/>
+      </div>
+      <video id="video-player" autoplay>
+        <!-- <source id='' src="./demo_2.mp4" type="video/mp4"> -->
+      </video>
+      <!-- <div id="overlay"> -->
+        <div id="title-bar-div">Title_bar.mp4</div>
+        <div id="indicator-div">
+          <!-- only except pause and play -->
+          <i class="fas fa-info"></i>
+        </div>
+        <!-- <div id="play-pause-indicator-div">
+          <i class="fas fa-play"></i>
+        </div> -->
+        <div id="captions-div">
+          <span id="captions-text-span">lorem ipsum dor mat</span>
+        </div>
+        <div id="control-panel-div">
+          <div id='video-seekbar-div'><div id="video-seek-progressbar"></div></div>
+          <div id='control-buttons-div'>
+            <div>
+              <div id="play-pause-button-div">
+                <!-- setInnerHTMLhere -->
+                <i id="control-panel-play-button-logo" class="fas fa-pause"></i>
+              </div>
+              <div id="volume-ranger-div">
+                <!-- setInnerHTMLhere -->
+                <div id="volume-range-icon-div">
+                  <i class="fas fa-volume-up"></i>
+                </div>
+                <div>
+                  <!-- <i class="fas fa-signal"></i> -->
+                </div>
+              </div>
+              <div id="video-time-div">
+                <span id="curr-video-time"><i class="fas fa-clock"></i></span> / <span id="total-video-time"><i class="fas fa-clock"></i></span>
+              </div>
+            </div>
+            <div>
+              <div id="captions-button-div">
+                <!-- settInnerHTMLhere -->
+                <i class="far fa-closed-captioning"></i>
+              </div>
+              <div id="fullscreen-button-div">
+                <!-- settInnerHTMLhere -->
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+    <script>
+      require('./files/js/renderer.js')
+    </script>
+  </body>
+</html>

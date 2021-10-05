@@ -1,0 +1,28 @@
+{
+  "name": "dev-media-player",
+  "version": "1.0.0",
+  "description": "A video player for devs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec 'electron .'"
+  },
+  "keywords": [
+    "Electron",
+    "Dev Media Player"
+  ],
+  "author": "Mehul Singh Teya",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^5.0.0",
+    "electron-builder": "^22.11.7",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {},
+  "build": {
+    "appId": "com.simpl-mehul.app",
+    "win": {
+      "icon": "./files/images/simpl_logo.png"
+    }
+  }
+}
