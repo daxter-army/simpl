@@ -1,0 +1,46 @@
+@font-face {
+    font-family: monoid;
+    src: url('./assets/monoid.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* padding: 10px 30px; */
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    background-color: #222222;
+}
+
+#header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header > div {
+    display: flex;
+    align-items: center;
+    /* border: 1px red solid; */
+}
+
+.heading {
+    font-size: 2rem;
+}
+
+#app-logo {
+    width: 40px;
+}
+
+#animation-keyword {
+    color: #f1c40f;
+    /* font-weight: bold; */
+}
+
+#banner {
+    padding: 8px 15px;
+    font-size: 2.5rem;
+}
