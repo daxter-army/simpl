@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./files/index.css" />
-        <link rel="stylesheet" href="./files/video.css" />
+        <!-- <link rel="stylesheet" href="./files/video.css" /> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,12 +22,88 @@
                     <a href="https://github.com/daxter-army/simpl" target="_blank"><i class="fab fa-github fa-2x"></i></a>
                 </div>
             </div>
+            <div id="banner-text">
+                <p class="feature-heading">A <span id="animation-keyword">minimalistic</span> video player, <br/> crafted for devs.</p>
+            </div>
             <div id="banner">
-                <p>A <span id="animation-keyword">minimalistic</span> video player, <br/> crafted for devs.</p>
-                <br/>
-                <br/>
-                <p>Coming Soon . . .</p>
+                <div id="video-player">
+                    <div id="control-panel">
+                        <div id="progress-container">
+                            <div id="progress-bar"></div>
+                        </div>
+                        <div id="control-buttons-container">
+                            <div>
+                                <i class="fas fa-play"></i>
+                                <i class="fas fa-volume-up"></i>
+                            </div>
+                            <div>
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="features">
+                <div>
+                    <div>
+                        <div style="text-align: center;">
+                            <i class="fas fa-box-open feature-icons"></i>
+                            <p><b>Open Source</b></p>
+                        </div>
+                        <br/>
+                        <p>Feel free to check, modify, create your own editions of this, because it depends upon, you how to use it.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div style="text-align: center;">
+                            <i class="fas fa-desktop feature-icons"></i>
+                            <p><b>Cross Platform</b></p>
+                        </div>
+                        <br/>
+                        <p>With the power of ElectronJS, run it everywhere, run it anywhere, on Windows, Linux & MacOS.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div style="text-align: center;">
+                            <i class="fas fa-ban feature-icons"></i>
+                            <p><b>No more space wastage</b></p>
+                        </div>
+                        <br/>   
+                        <p>No need of bulky interface when just need the bare minimum, ditch the complexity.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div style="text-align: center;">
+                            <i class="fas fa-magic feature-icons"></i>
+                            <p><b>Styles and Themes*</b></p>
+                        </div>
+                        <br/>
+                        <p>Make it yours and customize it, to its core, choosing your own colors and styles, for it.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="downloads">
+                <h1>Downloads</h1>
+                <div id="download-links">
+                    <div id="linux" class="download-link-btn-container">
+                        <i id="linux-icon" class="fab fa-linux fa-3x download-icons"></i>
+                        <div class="dwnld-link-div" id="linux-btn">.zip <span class="dwnld-btn"><i class="fas fa-arrow-down"></i></span></div>
+                    </div>
+                    <div id="windows" class="download-link-btn-container">
+                        <i id="windows-icon" class="fab fa-windows fa-3x download-icons"></i>
+                        <div class="dwnld-link-div" id="windows-btn">.7z <a href="https://raw.githubusercontent.com/daxter-army/simpl_dist/main/simpl_dmp_win_bundle.7z" download><span class="dwnld-btn"><i class="fas fa-arrow-down"></i></span></a></div>
+                    </div>
+                    <div id="macos" class="download-link-btn-container">
+                        <i id="macos-icon" class="fab fa-apple fa-3x download-icons"></i>
+                        <div class="dwnld-link-div" id="macos-btn">.zip <span class="dwnld-btn"><i class="fas fa-arrow-down"></i></span></div>
+                    </div>
+                </div>
             </div>
         </div>
+        <script src="./files/detect.js"></script>
+        <script src="./files/index.js"></script>
     </body>
     </html>
