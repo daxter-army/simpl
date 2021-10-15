@@ -69,7 +69,7 @@ In this internet age, everyone is learning to stay ahead in their career or to d
 Simpl allows you to watch your favourite tutorial, with minimalistic interface and functionalities, so that the video player controls do not occupy the space, only showing video on the screen.
 <br/><br/>
 
-## Novelty of the Idea
+## 🌠 Novelty of the Idea
 There are plenty of video players, in the market, but they come with bulky interfaces, features that we don't use while we are learning or watching any tutorial. Simpl is a simple video player comes with only needed features yet is richful, that do not occupies much space of the interface. Only view your video.
 
 ## 💿 Flow Chart of Methodology
