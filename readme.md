@@ -9,7 +9,7 @@
 <br/>
 
 <p align="center">
-  <a href="https://github.com/daxter-army/dev-media-player/">
+  <a href="https://github.com/daxter-army/simpl/">
     <img src="https://github.com/daxter-army/simpl/blob/main/files/images/simpl_logo.png" alt="Logo" width="50">
   </a>
 
@@ -140,10 +140,27 @@ To create one distributable file on windows, you need to download **electron-bui
   npm i electron-builder -g
 ```
 
-- To create a distributable for windows platform, in zip format (Feel free to experiment here)
+- To create a distributable for windows platform, in zip format
 ```sh
   electron-builder -w zip
 ```
+
+- To create a distributable for windows platform, in 7zip format
+```sh
+  electron-builder -w 7z
+```
+
+- To create a distributable for 32bit windows platform
+```sh
+  electron-builder --windows nsis:ia32
+```
+
+- To create a distributable for 64bit windows platform
+```sh
+  electron-builder --windows nsis:x64
+```
+
+**Feel free to experiment here, with package bundling.**
 
 - Now there would be a dist folder, containing the application
 <!-- USAGE EXAMPLES -->
