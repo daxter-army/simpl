@@ -30,7 +30,8 @@
     <li>
       <a href="#about-the-project">Introduction</a>
       <ul>
-      <li><a href="#functionalities">Functionalities</a></li>
+        <li><a href="#built-with">Flow chart of Methodology</a></li>
+        <li><a href="#functionalities">Functionalities</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -65,6 +66,9 @@
 In this internet age, everyone is learning to stay ahead in their career or to develop something new, creative and fun. Digging the internet for quality tutorials, watching that youtube videos of blender, illustrator, photoshop, webdev and coding along. Coding along with videos is a nightmare specially if you are only having one single display.
 Simpl allows you to watch your favourite tutorial, with minimalistic interface and functionalities, so that the video player controls do not occupy the space, only showing video on the screen.
 <br/><br/>
+
+## Flow Chart of Methodology
+<img src="./simpl_dmp_flowchart.png" alt="flowchart">
 
 ## 🌟 Functionalities
 * Following are the functionalities implemented till now:

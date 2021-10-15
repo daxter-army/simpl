@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./files/index.css" />
+        <link rel="stylesheet" href="./files/scrollbar.css" />
         <!-- <link rel="stylesheet" href="./files/video.css" /> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,7 +17,9 @@
         <div id="wrapper">
             <div id="header">
                 <div>
-                    <img id="app-logo" src="./assets/logo_simpl.svg" alt="app logo"/>
+                    <a href=".">
+                        <img id="app-logo" src="./assets/logo_simpl.svg" alt="app logo"/>
+                    </a>
                 </div>
                 <div>
                     <a href="https://github.com/daxter-army/simpl" target="_blank"><i class="fab fa-github fa-2x"></i></a>
@@ -86,21 +89,27 @@
                 </div>
             </div>
             <div id="downloads">
-                <h1>Downloads</h1>
+                <h1>Downloads</h1>choose as per your convenience
                 <div id="download-links">
                     <div id="linux" class="download-link-btn-container">
                         <i id="linux-icon" class="fab fa-linux fa-3x download-icons"></i>
-                        <div class="dwnld-link-div" id="linux-btn">.zip <span class="dwnld-btn"><i class="fas fa-arrow-down"></i></span></div>
+                        <div class="links" id="linux-links">
+                            <div class="dwnld-linux-link-div">.zip <span class="dwnld-btn"><i class="fas fa-arrow-down"></i></span></div>
+                        </div>
                     </div>
                     <div id="windows" class="download-link-btn-container">
                         <i id="windows-icon" class="fab fa-windows fa-3x download-icons"></i>
-                        <div class="dwnld-link-div" id="windows-btn">.7z (7zip) <a href="https://raw.githubusercontent.com/daxter-army/simpl_dist/main/simpl_dmp_win_bundle.7z" download><span class="dwnld-btn"><i class="fas fa-arrow-down"></i></span></a></div>
-                        <div class="dwnld-link-div" id="windows-btn">x32 (32 bit)<a href="https://raw.githubusercontent.com/daxter-army/simpl_dist/main/simpl_dmp_win_bundle.7z" download><span class="dwnld-btn"><i class="fas fa-arrow-down"></i></span></a></div>
-                        <div class="dwnld-link-div" id="windows-btn">x64 (64 bit)<a href="https://raw.githubusercontent.com/daxter-army/simpl_dist/main/simpl_dmp_win_bundle.7z" download><span class="dwnld-btn"><i class="fas fa-arrow-down"></i></span></a></div>
+                        <div class="links" id="win-links">
+                            <div class="dwnld-win-link-div" >.7z (7zip extractable) <a href="https://raw.githubusercontent.com/daxter-army/simpl/main/dist/simpl_dmp_win_bundle.7z" download><span class="dwnld-btn"><i class="fas fa-arrow-down"></i></span></a></div>
+                            <div class="dwnld-win-link-div" >x32 (32 bit setup)<a href="https://raw.githubusercontent.com/daxter-army/simpl/main/dist/simpl-dmp-setup-32bit.exe" download><span class="dwnld-btn"><i class="fas fa-arrow-down"></i></span></a></div>
+                            <div class="dwnld-win-link-div" >x64 (64 bit setup)<a href="https://raw.githubusercontent.com/daxter-army/simpl/main/dist/simpl-dmp-setup-64bit.exe" download><span class="dwnld-btn"><i class="fas fa-arrow-down"></i></span></a></div>
+                        </div>
                     </div>
                     <div id="macos" class="download-link-btn-container">
                         <i id="macos-icon" class="fab fa-apple fa-3x download-icons"></i>
-                        <div class="dwnld-link-div" id="macos-btn">coming <span class="dwnld-btn">soon</span></div>
+                        <div class="links" id="macos-links">
+                            <div class="dwnld-macos-link-div">coming soon</div>
+                        </div>
                     </div>
                 </div>
             </div>
