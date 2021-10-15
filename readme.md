@@ -60,15 +60,17 @@
 ## ✨ Introduction
 
 <p align="center">
-<!-- <img src="https://github.com/daxter-army/key-cast/blob/main/docs/docs_assets/keycast_demo_gif_2.gif" width="75%" alt="Keycast in action"/> -->
+<img src="./readme-media/scr_1.png" width="50%" alt="screenshot_1" style="display: inline-block;" />
+<img src="./readme-media/scr_2.png" width="50%" alt="screenshot_2" style="display: inline-block;" />
+
 </p>
 
 In this internet age, everyone is learning to stay ahead in their career or to develop something new, creative and fun. Digging the internet for quality tutorials, watching that youtube videos of blender, illustrator, photoshop, webdev and coding along. Coding along with videos is a nightmare specially if you are only having one single display.
 Simpl allows you to watch your favourite tutorial, with minimalistic interface and functionalities, so that the video player controls do not occupy the space, only showing video on the screen.
 <br/><br/>
 
-## Flow Chart of Methodology
-<img src="./simpl_dmp_flowchart.png" alt="flowchart">
+## 💿 Flow Chart of Methodology
+<img src="./readme-media/simpl_dmp_flowchart.png" alt="flowchart">
 
 ## 🌟 Functionalities
 * Following are the functionalities implemented till now:
