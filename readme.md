@@ -60,8 +60,8 @@
 ## ✨ Introduction
 
 <p align="center">
-<img src="./readme-media/scr_1.png" width="50%" alt="screenshot_1" style="display: inline-block;" />
-<img src="./readme-media/scr_2.png" width="50%" alt="screenshot_2" style="display: inline-block;" />
+<img src="./readme-media/scr_1.png" width="100" alt="screenshot_1" />
+<img src="./readme-media/scr_2.png" width="100" alt="screenshot_2" />
 
 </p>
 
