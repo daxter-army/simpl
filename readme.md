@@ -30,6 +30,7 @@
     <li>
       <a href="#about-the-project">Introduction</a>
       <ul>
+        <li><a href="#novelty-of-the-idea">Novelty</a></li>
         <li><a href="#built-with">Flow chart of Methodology</a></li>
         <li><a href="#functionalities">Functionalities</a></li>
         <li><a href="#built-with">Built With</a></li>
