@@ -59,10 +59,9 @@
 
 ## ✨ Introduction
 
-<p align="center">
-<img src="./readme-media/scr_1.png" width="100" alt="screenshot_1" />
-<img src="./readme-media/scr_2.png" width="100" alt="screenshot_2" />
-
+<p align="center" style="margin: 20px 0px;">
+<img src="./readme-media/scr_1.png" width="500" alt="screenshot_1" style="margin-right: 10px;"/>
+<img src="./readme-media/scr_2.png" width="500" alt="screenshot_2" style="margin-left: 10px;"/>
 </p>
 
 In this internet age, everyone is learning to stay ahead in their career or to develop something new, creative and fun. Digging the internet for quality tutorials, watching that youtube videos of blender, illustrator, photoshop, webdev and coding along. Coding along with videos is a nightmare specially if you are only having one single display.
