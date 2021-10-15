@@ -59,8 +59,8 @@
 
 ## ✨ Introduction
 
-<p align="center" style="margin: 20px 0px;">
-<img src="./readme-media/scr_1.png" width="500" alt="screenshot_1" style="margin-bottom: 10px;"/>
+<p align="center">
+<img src="./readme-media/scr_1.png" width="500" alt="screenshot_1" />
 <img src="./readme-media/scr_2.png" width="500" alt="screenshot_2"/>
 </p>
 
@@ -69,7 +69,7 @@ Simpl allows you to watch your favourite tutorial, with minimalistic interface a
 <br/><br/>
 
 ## 💿 Flow Chart of Methodology
-<img src="./readme-media/simpl_dmp_flowchart.png" alt="flowchart">
+<img src="./readme-media/fc.png" alt="flowchart">
 
 ## 🌟 Functionalities
 * Following are the functionalities implemented till now:
