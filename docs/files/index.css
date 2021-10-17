@@ -76,7 +76,9 @@ a {
 /* VIDEO PLAYER STARTS */
 #video-player {
     position: relative;
-    background-color: #111111;
+    /* background-color: white; */
+    background-image: url('../assets/video-bg.jpg');
+    background-size: cover;
     border-radius: 5px;
     /* border: 1px red solid; */
 }
@@ -87,6 +89,7 @@ a {
     left: 0;
     width: 100%;
     font-size: x-large;
+    background-color: rgba(34, 34, 34, 0.4);
     /* border: 1px red solid; */
 }
 
