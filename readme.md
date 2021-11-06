@@ -77,9 +77,21 @@ There are plenty of video players, in the market, but they come with bulky inter
 
 ## 🌟 Functionalities
 * Following are the functionalities implemented till now:
-* Cross platform
-* minimalistic design
-* keyboard support, for controlling all the functions
+
+* **Play anything (*subtitles included)**
+  * Just drag and drop your video to play
+  * Just drag and drop your subtitle file to play it along the video
+
+* **Cross platform application**
+  * One code, All platforms
+
+* **Minimalistic design**
+  * only see the usefull stuff on the screen, not the typical useless and bulky UIs
+
+* **Keyboard support**
+  * control the whole video right from your keyboard
+
+* **More features coming soon...**
 
 ### 🛠 Built With
 
