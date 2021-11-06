@@ -15,7 +15,7 @@ function loadFunctions() {
     const PlayPauseControlBtn = document.getElementById('play-pause-button-div')
     const FullScreenControlBtn = document.getElementById('fullscreen-button-div')
     const CaptionsControlBtn = document.getElementById('captions-button-div')
-    const CaptionsDiv = document.getElementById('captions-div')
+    // const CaptionsDiv = document.getElementById('captions-div')
     const LoadingImage = document.getElementById('loading-image')
     const VolumeRangerLogoDiv = document.getElementById('volume-range-icon-div')
     const IndicatorDiv = document.getElementById('indicator-div')
@@ -28,40 +28,75 @@ function loadFunctions() {
     let volumeBeforeMute = 1.0
 
     let SKIP_TIME = 5
-    let INDICATOR_ANIMATION_TIME_MS = 200
+    let INDICATOR_ANIMATION_TIME_MS = 300
     let ACCENT_COLOR = '#f3ca20'
 
     // drag and drop
     VideoWrapper.addEventListener('dragover', (event) => {
-
         event.preventDefault()
 
-        // console.log('dragging')
+        console.log('dragging')
         LoadingImage.src = './files/images/file-video-solid.png'
         VideoWrapper.style.border = '3px var(--main-accent-color) solid'
     })
 
-    // drag and drop
+    // If drag completes without, happening of drop
     VideoWrapper.addEventListener('dragleave', (event) => {
-
         event.preventDefault()
 
-        LoadingImage.src = './files/images/simpl_logo.png'
+        LoadingImage.src = './simpl_logo.png'
         VideoWrapper.style.border = 'none'
-        // console.log('why not dragging?')
+        console.log('why not dragging?')
     })
 
+    //* CONTROL FUNCTION 
+    // Drop event
     VideoWrapper.addEventListener('drop', (event) => {
         event.preventDefault()
 
         VideoWrapper.style.border = 'none'
 
-        let file = event.dataTransfer.files[0]
+        var file = event.dataTransfer.files[0]
         VideoFileName = file.name
-        VideoFileType = file.type
+        VideoFileType = file.type.toLocaleLowerCase()
+        const fileNameArr = file.name.split(".")
+        const fileExtension = fileNameArr[fileNameArr.length - 1].toLocaleLowerCase()
 
-        VideoPlayer.src = URL.createObjectURL(file)
-    })
+        if(fileExtension === 'mp4' || fileExtension === 'mkv') {
+            // only allows files of file type video/mp4
+            VideoPlayer.src = URL.createObjectURL(file)
+        }
+        else if(fileExtension === 'srt') {
+            // sending to readCaptions functions to read functions
+            var reader = new FileReader()
+            reader.readAsText(file)
+
+            reader.onload = function() {
+                let lines = reader.result.split("\n").map(chunk => chunk.replace("\r", ""))
+                let modLines = lines.map((ele) => ele.includes('-->') ? ele.replace(/,/g, '.') : ele).filter(item => item ? true : false)
+                const finalLines = []
+
+                for(let i = 0; i < modLines.length; i++) {
+                    if(modLines[i].includes('-->')) {
+                        finalLines.push(modLines[i])
+                        finalLines.push(modLines[i + 1])
+                        i++
+                    }
+                }
+                
+                lines = null
+                modLines = null
+                // return subs in WEBVTT string form
+                const VTTString = fromSrtToVtt(finalLines)
+                // attaching the track element with subs, to the UI
+                AttachSubsToPlayer(VTTString)
+            }
+        }
+        else {
+            console.log('This video/subtitle format is not supported yet')
+        }
+        
+    }, false)
 
     //* MAIN FUNCTION 
     VideoPlayer.addEventListener('loadeddata', () => {
@@ -91,8 +126,9 @@ function loadFunctions() {
     //     PlayPauseControlBtn.innerHTML = '<i id="control-panel-play-button-logo" class="fas fa-pause"></i>'
     // }
 
-
+    // fires when the video updates it's current time
     VideoPlayer.ontimeupdate = function() {
+        // rawCurrVideoTime is in seconds and milliseconds
         let rawCurrVideoTime = this.currentTime
         let currVideoTime = rawCurrVideoTime/this.duration * 100
         VideoSeekProgressBar.style.width= `${currVideoTime}%`
@@ -116,9 +152,12 @@ function loadFunctions() {
             minutes = '0' + minutes
         }
         
+        // updating current video time
         CurrVideoTime.innerText = hours ? `${hours}:${minutes}:${seconds}` : `${minutes}:${seconds}`
     }
     
+    // give power to controls and keyboardlisteners,
+    // when the video is dragged, dropped, and has been loaded
     function givePowerToVideoControllers() {
         VideoSeekbarTotal.addEventListener('click', jumpSeekbar)
         VideoPlayer.addEventListener('click', playPauseVideo)
@@ -126,15 +165,59 @@ function loadFunctions() {
         FullScreenControlBtn.addEventListener('click', toggleFullscreen)
         CaptionsControlBtn.addEventListener('click', toggleCaptions)
     }
+    
+    //? RELATED TO SUBTITLE GENERATION AND DISPLAY
+    function fromSrtToVtt(subArray) {        
+        let FinalString = "WEBVTT\n\n"
 
-    //! TODO
-    // function attachSubtitles() {
-    //     // hiding any default attached subtitles
-    //     for (var i = 0; i < VideoPlayer.textTracks.length; i++) {
-    //         VideoPlayer.textTracks[i].mode = 'hidden';
-    //      }
-    // }
+        for(let i = 0; i < subArray.length; i++) {
+            if(!(i & 1)) {
+                // even index
+                FinalString += `${subArray[i]}\n`
+            }
+            else {
+                FinalString += `${subArray[i]}\n\n`
+            }
+        }
+        return FinalString
+    }
 
+    function AttachSubsToPlayer(inputBlob) {
+        const blob = new Blob([inputBlob], { type: 'text/vtt'})
+        const url = (URL || webkitURL).createObjectURL(blob)
+        const TrackElement = document.createElement("track")
+        TrackElement.id = "subtitle-track"
+        TrackElement.kind = "captions"
+        TrackElement.label = "English"
+        TrackElement.srcLang = "en"
+        TrackElement.src = url
+        VideoPlayer.append(TrackElement)
+        TrackElement.mode = "showing"
+        VideoPlayer.textTracks[0].mode = "showing"
+        showCaptions = true
+        
+        //! find some way to eleminate this setTimeout 
+        setTimeout(() => {
+            stylizeCaptions()
+        }, 500)
+    }
+
+    function stylizeCaptions() {
+        // reading current captions
+        const subTrack = document.getElementById('subtitle-track').track;
+
+        //! property should be changed for activeCues
+        //! activeCues become available only when they are really active on the screen 
+
+        //! right now, changing location of each and every sub, not efficient 
+        for (let property in subTrack.cues) {
+            if(subTrack.cues[property].line) {
+                subTrack.cues[property].line = -4
+            }
+        }
+    }
+
+    //? KEYBOARD LISTENERS
     function attachKeyboardListeners() {
         document.onkeydown = function(event) {
             switch(event.keyCode) {
@@ -186,6 +269,7 @@ function loadFunctions() {
         }
     }
 
+    //? VIDEO PLAYER FUNCTIONS 
     function glowIndicator(indication, color = '#ffffff') {
         IndicatorDiv.style.display = 'flex'
         IndicatorDiv.style.color = color
@@ -211,7 +295,7 @@ function loadFunctions() {
             videoVolume = videoVolume + 0.1
             videoVolume = videoVolume.toFixed(1)
             VideoPlayer.volume = videoVolume
-            console.log(videoVolume)
+            // console.log(videoVolume)
 
             if(videoVolume == 1.0) {
                 VolumeRangerLogoDiv.innerHTML = '<i class="fas fa-volume-up"></i>'
@@ -226,7 +310,7 @@ function loadFunctions() {
             glowIndicator('fas fa-volume-up', ACCENT_COLOR)
         }
 
-        console.log(VideoPlayer.volume)
+        // console.log(VideoPlayer.volume)
     }
 
     function decreaseVolume() {
@@ -236,7 +320,7 @@ function loadFunctions() {
             videoVolume = videoVolume - 0.1
             videoVolume = videoVolume.toFixed(1)
             VideoPlayer.volume = videoVolume
-            console.log(videoVolume)
+            // console.log(videoVolume)
 
             if(videoVolume == 0.0) {
                 VolumeRangerLogoDiv.innerHTML = '<i class="fas fa-volume-off"></i>'
@@ -310,7 +394,7 @@ function loadFunctions() {
             TitleBar.style.display = 'block'
             ControlPanel.style.display = 'block'
             VideoPlayer.style.cursor = 'default'
-            CaptionsDiv.style.bottom = '60px'
+            // CaptionsDiv.style.bottom = '60px'
             
             clearTimeout(hideMouseSetTimeout)
             
@@ -318,7 +402,7 @@ function loadFunctions() {
                 TitleBar.style.display = 'none'
                 ControlPanel.style.display = 'none'
                 VideoPlayer.style.cursor = 'none'
-                CaptionsDiv.style.bottom = '20px'
+                // CaptionsDiv.style.bottom = '20px'
             }, 3000)
         })
     }
@@ -353,27 +437,37 @@ function loadFunctions() {
     function showAndHideOverlayInitially() {
         TitleBar.style.display = 'block'
         ControlPanel.style.display = 'block'
-        CaptionsDiv.style.bottom = '60px'
+        // CaptionsDiv.style.bottom = '60px'
 
         setTimeout(() => {
             TitleBar.style.display = 'none'
             ControlPanel.style.display = 'none'
-            CaptionsDiv.style.bottom = '20px'
+            // CaptionsDiv.style.bottom = '20px'
         }, 3000)
     }
 
     function toggleCaptions() {
         console.log('toggleCaptions')
         if(showCaptions) {
-            CaptionsDiv.style.display = 'none'
+            // Toggling off the subs
+            VideoPlayer.textTracks[0].mode = "hidden"
+
+            // UI changes
+            // CaptionsDiv.style.display = 'none'
             // CaptionsDiv.style.bottom = '0px'
             CaptionsControlBtn.innerHTML = '<i class="far fa-closed-captioning"></i>'
+            glowIndicator('far fa-closed-captioning')
             showCaptions = false
         }
         else {
-            CaptionsDiv.style.display = 'block'
+            // Toggling on the subs
+            VideoPlayer.textTracks[0].mode = "showing"
+            
+            // UI changes
+            // CaptionsDiv.style.display = 'block'
             // CaptionsDiv.style.bottom = '75px'
             CaptionsControlBtn.innerHTML = '<i class="fas fa-closed-captioning"></i>'
+            glowIndicator('fas fa-closed-captioning')
             showCaptions = true
         }
     }

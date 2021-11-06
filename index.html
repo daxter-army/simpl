@@ -14,7 +14,8 @@
         <img id="loading-image" src="./files/images/simpl_logo.png"/>
       </div>
       <video id="video-player" autoplay>
-        <!-- <source id='' src="./demo_2.mp4" type="video/mp4"> -->
+          <!-- <source id='video-source' src="./demo_2.mp4" type="video/mp4"> -->
+          <!-- <track kind="subtitles" srclang="en" src="./welcome.vtt" label="english" default/> -->
       </video>
       <!-- <div id="overlay"> -->
         <div id="title-bar-div">Title_bar.mp4</div>
@@ -22,12 +23,13 @@
           <!-- only except pause and play -->
           <i class="fas fa-info"></i>
         </div>
-        <!-- <div id="play-pause-indicator-div">
-          <i class="fas fa-play"></i>
-        </div> -->
-        <div id="captions-div">
-          <span id="captions-text-span">lorem ipsum dor mat</span>
-        </div>
+          <!-- <div id="play-pause-indicator-div">
+            <i class="fas fa-play"></i>
+          </div> -->
+          <!-- CAPTIONS ARE BEING GENERATED FROM TRACK ELEMENT -->
+          <!-- <div id="captions-div">
+            <span id="captions-text-span">lorem ipsum dor mat</span>
+          </div> -->
         <div id="control-panel-div">
           <div id='video-seekbar-div'><div id="video-seek-progressbar"></div></div>
           <div id='control-buttons-div'>
