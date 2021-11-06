@@ -209,3 +209,18 @@ span i {
 .links > div {
     margin: 6px 0px;
 }
+
+footer {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    /* border-top: 1px #f1c40f solid; */
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1000px) {
+    #banner {
+        height: 400px;
+        width: 80%;
+    }
+  }
