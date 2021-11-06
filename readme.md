@@ -76,9 +76,9 @@ There are plenty of video players, in the market, but they come with bulky inter
 <img src="./readme-media/fc_2.png" alt="flowchart">
 
 ## 🌟 Functionalities
-* Following are the functionalities implemented till now:
+* Following are the functionalities implemented **till now**:
 
-* **Play anything (*subtitles included)**
+* **Play anything (subtitles included)**
   * Just drag and drop your video to play
   * Just drag and drop your subtitle file to play it along the video
 
