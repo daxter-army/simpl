@@ -79,17 +79,17 @@ There are plenty of video players, in the market, but they come with bulky inter
 * Following are the functionalities implemented **till now**:
 
 * **Play anything (subtitles included)**
-  * Just drag and drop your video to play
-  * Just drag and drop your subtitle file to play it along the video
+  * Just drag and drop your video to play.
+  * Just drag and drop your subtitle file to play it along the video.
 
 * **Cross platform application**
-  * One code, All platforms
+  * powered by ElectronJS,one code to run on all platforms.
 
 * **Minimalistic design**
-  * only see the usefull stuff on the screen, not the typical useless and bulky UIs
+  * only see the usefull stuff on the screen, not the typical useless and bulky UIs.
 
 * **Keyboard support**
-  * control the whole video right from your keyboard
+  * control the whole video right from your keyboard.
 
 * **More features coming soon...**
 
