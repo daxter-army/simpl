@@ -91,8 +91,6 @@ There are plenty of video players, in the market, but they come with bulky inter
 * **Keyboard support**
   * control the whole video right from your keyboard.
 
-* **More features coming soon...**
-
 ### 🛠 Built With
 
 This is achieved with **ElectronJS**, and the whole application is written in html, css and vanilla javascript, and the application is build with **electron-builder**, for cross-platform compatibilty.
