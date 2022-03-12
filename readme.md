@@ -184,9 +184,7 @@ To create one distributable file on windows, you need to download **electron-bui
 
 <!-- <img src="https://github.com/daxter-army/key-cast/blob/main/docs/docs_assets/ui_screenshot.png" width="35%" alt="gui" /> -->
 
-You can use it to watch your favourite tutorial, with great ease and great functionalities.
-
-**More themes and features coming soon!**
+You can use it to watch your favourite tutorials, with great ease and great functionalities, and focus only on what matters 💯.
 
 <!-- CONTRIBUTING -->
 <!-- ## Contributing
