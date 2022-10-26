@@ -128,7 +128,7 @@ a {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
-    width: 80%; 
+    width: 60%; 
     /* border: 1px red solid; */
 }
 
