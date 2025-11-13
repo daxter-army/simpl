@@ -5,18 +5,21 @@ document.getElementById('linux').addEventListener('click', selectLinuxDownloads)
 document.getElementById('windows').addEventListener('click', selectWindowsDownloads)
 document.getElementById('macos').addEventListener('click', selectMacosDownloads)
 
-if(os_.includes('windows')) {
 // windows
-    selectWindowsDownloads()
-}
-else if(os_.includes('linux')) {
-// linux
-    selectLinuxDownloads()
-}
-else {
-// macos
-    selectMacosDownloads()
-}
+selectWindowsDownloads()
+
+// if(os_.includes('windows')) {
+// // windows
+//     selectWindowsDownloads()
+// }
+// else if(os_.includes('linux')) {
+// // linux
+//     selectLinuxDownloads()
+// }
+// else {
+// // macos
+//     selectMacosDownloads()
+// }
 
 function selectLinuxDownloads() {
     document.getElementById('download-links').style.gridTemplateColumns = '2fr 1fr 1fr'
